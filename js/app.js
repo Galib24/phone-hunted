@@ -109,8 +109,14 @@ modalContainer.innerHTML = `
 <p>sensors:  ${phone.mainFeatures.sensors[3]}</p>
 <p>sensors:  ${phone.mainFeatures.sensors[4]}</p>
 <p>sensors:  ${phone.mainFeatures.sensors[5]}</p>
-<p>Storage:  ${phone.mainFeatures.storage}</p>
-<p>releaseDate:  ${phone.releaseDate}</p>
+<p>Storage:  ${phone.mainFeatures ? phone.mainFeatures.storage : 'No Storage Information found'}</p>
+<p>Others:  ${phone.others.Bluetooth}</p>
+<p>GPS:  ${phone.others.GPS}</p>
+<p>NFC:  ${phone.others.NFC}</p>
+<p>Radio:  ${phone.others.Radio}</p>
+<p>USB:  ${phone.others.USB}</p>
+<p>WLAN:  ${phone.others.WLAN}</p>
+<p>Release Date:  ${phone.releaseDate ? phone.releaseDate : 'No release Date found'}</p>
 
 
 `;
