@@ -32,4 +32,12 @@ function comPairObject(first1,second2){
     }
 }
 const isSame = comPairObject(first1, second2)
-console.log(isSame)
+// console.log(isSame)
+
+var examPass = true;
+var markShit = 40;
+if(examPass == true || markShit >50){
+    console.log('pass')
+}else{
+    console.log('fail')
+}
